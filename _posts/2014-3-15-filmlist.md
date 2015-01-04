@@ -7,9 +7,11 @@ tags: 生活
 {{ page.title }}
 ===========
 想看: 1.最好的青春 时长:6个小时  导演:马可·图利欧·吉欧达 2003  
+138.2015年01月03日 马达加斯加的企鹅 Penguins of Madagascar(2014)
+137.2015年01月02日 刺杀金正恩 The Interview
 136.2014年12月31日 智取威虎山3D The Taking of Tiger Mountain 3D $T$  
 135.2014年12月25日 伸冤人 The Equalizer  
-134.2014年12月25日18:15:54 边境 Frontera  
+134.2014年12月25日 18:15:54 边境 Frontera  
 133.2014年12月18日 恶老板2 Horrible  Bosses 2  
 132.2014年12月12日 夜行者 Nightcrawler  
 131.2014年12月10日 遗愿清单  
