@@ -13,8 +13,8 @@ layout: default
     {% endfor %}
   </ul>
 </div>
-
-<div class="ds-share" data-thread-key="{{ page.id }}" data-title="{{ page.title }}" data-images="此处请替换为分享时显示的图片的链接地址" data-content="." data-url="xn--37qv0we67a.xn--fiqs8s{{ page.url }}">
+<!-- 多说分享插件 start -->
+<div class="ds-share" data-thread-key="{{ page.id }}" data-title="{{ page.title }}" data-images="http://ss16.sinaimg.cn/mw1024/6d9e92ef49422b209b23f&690" data-content="." data-url="xn--37qv0we67a.xn--fiqs8s{{ page.url }}">
     <div class="ds-share-inline">
       <ul  class="ds-share-icons-">
       	
@@ -29,9 +29,10 @@ layout: default
       </div>
     </div>
  </div>
+<!-- 多说分享插件 end -->
 
 <!-- 多说评论框 start -->
-	<div class="ds-thread" data-thread-key="{{ page.id }}" data-title="" data-url="xn--37qv0we67a.xn--fiqs8s{{ page.url }}"></div>
+	<div class="ds-thread" data-thread-key="{{ page.id }}" data-title="{{ page.title }}" data-url="xn--37qv0we67a.xn--fiqs8s{{ page.url }}"></div>
 <!-- 多说评论框 end -->
 
 <!-- 多说公共JS代码 start (一个网页只需插入一次) -->
