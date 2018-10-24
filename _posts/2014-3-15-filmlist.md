@@ -1,12 +1,12 @@
 ---
 layout: post
-title: 看电影
-tags: 生活
+title: Film List
+tags: life
 ---
 
 {{ page.title }}
 ===========
-想看: 1.最好的青春 时长:6个小时  导演:马可·图利欧·吉欧达 2003        
+to-do: 1.最好的青春 时长:6个小时  导演:马可·图利欧·吉欧达 2003        
 140.2015年01月19日 十二罗汉 Ocean's Twelve      
 139.2015年01月05日 一步之遥 Gone with the Bullets    
 138.2015年01月03日 马达加斯加的企鹅 Penguins of Madagascar(2014)              
