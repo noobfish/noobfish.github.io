@@ -2,7 +2,7 @@
 layout: post
 title: Film List
 tags: Film
-categories: [blog, travel]
+categories: [life]
 ---
 
 {{ page.title }}
