@@ -2,7 +2,7 @@
 layout: post
 title: Film List
 tags: Film
-category:life
+categorys:life
 ---
 
 {{ page.title }}
