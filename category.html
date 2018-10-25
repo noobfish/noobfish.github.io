@@ -6,8 +6,8 @@ title: categories
 
 {% for category in site.categories %}
 <h2>{{ category | first }}</h2>
+<p>test</p>
 </span>{{ category | last | size }}</span>
-<p>Counts:</p>
 <ul class="arc-list">
     {% for post in category.last %}
         <li>{{ post.date | date:"%Y-%m-%d"}} - <a href="{{ post.url }}">{{ post.title }}</a></li>
