@@ -1,7 +1,8 @@
 ---
 layout: post
 title: Film List
-tags: life
+tags: Film
+category:life
 ---
 
 {{ page.title }}
