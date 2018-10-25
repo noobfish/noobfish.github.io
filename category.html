@@ -10,7 +10,7 @@ title: Categories
 
     {% for post in category[1] %}
     <li>
-        <span">{{ post.date | date: "%Y-%m-%d" }}</span> - 
+        <span">{{ post.date | date_to_string }}</span> - 
         <a href="{{ post.url }}">{{ post.title }}</a>
     </li>
     {% endfor %}
