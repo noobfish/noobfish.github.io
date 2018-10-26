@@ -3411,9 +3411,9 @@ var Gitment = function () {
         id: replacedUrl,
         link: replacedUrl
       }, options);
-
+//changed oauth server to https://bak.smalbox.club  , originally https://gh-oauth.imsun.net @by noobfish 2018.10.26
       this.state.user.isLoggingIn = true;
-      _utils.http.post('https://gh-oauth.imsun.net', {
+      _utils.http.post('https://bak.smalbox.club', {
         code: code,
         client_id: client_id,
         client_secret: client_secret
