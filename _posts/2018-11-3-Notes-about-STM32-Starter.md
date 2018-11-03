@@ -1,0 +1,66 @@
+---
+layout: post
+title: Notes about STM32: Starter
+tags: STM32
+categories: [STM32 Notes]
+---
+
+{{ page.title }}
+===========
+Now we are going to talk about how to utilize the powerful Arm Cortex-M
+architecture Microcontroller. Before we start, let’s take a glimpse of Cortex-M
+family and it's easy to use HAL Library.
+
+1.What is Cortex-M Microcontroller?
+The ARM Cortex-M is a group of 32-bit RISC ARM processor cores licensed by Arm
+Holdings. They are intended for microcontroller use, and have been shipped in
+tens of billions of devices. The cores consist of the Cortex-M0, Cortex-M0+,
+Cortex-M1, Cortex-M3, Cortex-M4, Cortex-M7, Cortex-M23, Cortex-M33, Cortex-M35P.
+The Cortex-M4 / M7 / M33 / M35P cores have an FPU silicon option, and when
+included in the silicon these cores are known as "Cortex-Mx with FPU" or
+"Cortex-MxF", where 'x' is the core number.
+There are many authorized ARM Cortex Microcontroller manufacturer, among all of
+these the ST electronics from Italy is famous and popular for beginners who want
+to learn about Cortex-M series MCU. In the following articles we will run our code
+mainly on a STM32L496RG-Discovery Evaluation Board. This EVB incorporates a
+powerful Cortx-M4F processor, which has FPU can handle with Algorithms faster.
+
+2.What is CMSIS?
+CMSIS was developed by ARM to allow microcontroller and software vendors to use a consistent software infrastructure
+to develop software solutions for Cortex-M microcontrollers. As such, you can see
+that many software products for Cortex-M microcontrollers are CMSIS-compliant.
+Currently the Cortex-M microcontroller market comprises:
+• More than 15 microcontroller vendors shipping Cortex-M microcontroller
+products, with some other silicon vendors providing Cortex-M based FPGA and ASICs
+• More than 10 toolchain vendors
+• More than 30 embedded operating systems
+• Additional Cortex-M middleware software providers for codecs, communication
+protocol stacks, etc.
+
+3.What is ST's HAL Library?
+HAL means Hardware Abstraction Layer, which provides Hardware abstractions.
+The HAL driver layer provides a generic multi instance simple set of APIs (application programming
+interfaces) to interact with the upper layer (application, libraries and stacks). It is composed of generic
+and extension APIs. It is directly built around a generic architecture and allows the built-upon layers,
+such as the middleware layer, to implement their functions without knowing in-depth how to use the
+MCU. This structure improves the library code reusability and guarantees easy portability to other
+devices.
+The HAL drivers include a complete set of ready-to-use APIs which simplify the user application
+implementation. As an example, the communication peripherals contain APIs to initialize and configure
+the peripheral, to manage data transfers based on polling, to handle interrupts or DMA, and to manage
+communication errors.
+The HAL driver APIs are split into two categories: generic APIs which provide common and generic
+functions for all the STM32 series and extension APIs which include specific and customized functions
+for a given family or part number.
+The HAL drivers are feature-oriented instead of IP-oriented. As an example, the timer APIs are split into
+several categories following the functions offered by the IP: basic timer, capture, pulse width modulation
+(PWM), and so on.
+The HAL driver layer implements run-time failure detection by checking the input values of all functions.
+Such dynamic checking contributes to enhance the firmware robustness. Run-time detection is also
+suitable for user application development and debugging.
+
+Reference:
+1.https://en.wikipedia.org/wiki/ARM_Cortex-M
+2.Mastering STM32 by Carmine Noviello
+3.The Definitive Guide to Arm® Cortex®-M3 and Cortex®-M4 Processors 3rd Edition
+4.https://www.st.com/content/ccc/resource/technical/document/user_manual/2f/71/ba/b8/75/54/47/cf/DM00105879.pdf
