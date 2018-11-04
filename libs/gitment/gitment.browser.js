@@ -3411,9 +3411,10 @@ var Gitment = function () {
         id: replacedUrl,
         link: replacedUrl
       }, options);
-// backup oauth server : https://bak.smalbox.club  @by noobfish 2018.10.26
+// backup oauth server : https://bak.smalbox.club  @by noobfish 2018.10.2
+//official server  https://gh-oauth.imsun.net
       this.state.user.isLoggingIn = true;
-      _utils.http.post('https://gh-oauth.imsun.net', {
+      _utils.http.post('https://bak.smalbox.club', {
         code: code,
         client_id: client_id,
         client_secret: client_secret
